@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frame35 — Support &amp; Privacy</title>
+<style>
+  :root{--gold:#D6AE66;--goldL:#EDD6A1;--dim:#C4BDAC;}
+  *{box-sizing:border-box;}
+  body{margin:0;background:#0b0b0c;color:#f3efe6;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;line-height:1.65;}
+  .wrap{max-width:720px;margin:0 auto;padding:56px 22px 80px;}
+  header{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  header img{border-radius:17px;box-shadow:0 6px 18px rgba(0,0,0,.5);}
+  h1{font-size:30px;margin:0;font-weight:700;}
+  h1 .n{color:var(--gold);}
+  .tag{color:var(--dim);margin:2px 0 36px;font-size:15px;}
+  h2{font-size:21px;margin:40px 0 10px;font-weight:700;}
+  h3{font-size:18px;margin:26px 0 6px;font-weight:600;color:#fff;}
+  p,li{color:#e7e1d4;}
+  a{color:var(--goldL);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  strong{color:#fff;}
+  .card{background:#161412;border:1px solid rgba(214,174,102,.28);border-radius:16px;padding:22px;margin-top:14px;}
+  label{display:block;font-size:13px;color:var(--dim);margin:14px 0 6px;}
+  input,textarea{width:100%;background:#0f0e0d;border:1px solid rgba(214,174,102,.25);border-radius:10px;color:#f3efe6;
+    font-size:15px;padding:12px 14px;font-family:inherit;}
+  input:focus,textarea:focus{outline:none;border-color:var(--gold);}
+  textarea{min-height:120px;resize:vertical;}
+  button{margin-top:18px;width:100%;background:linear-gradient(180deg,#f0dca7,#d6ae66);color:#1a1205;border:none;
+    border-radius:12px;padding:14px;font-size:16px;font-weight:700;cursor:pointer;}
+  button:disabled{opacity:.55;cursor:default;}
+  .status{margin-top:12px;font-size:14px;min-height:20px;}
+  .ok{color:#7fd1a6;} .err{color:#e88;}
+  ul{padding-left:20px;} li{margin:7px 0;}
+  .glow{width:100%;height:1px;background:linear-gradient(90deg,transparent,rgba(214,174,102,.5),transparent);margin:46px 0;}
+  footer{margin-top:52px;border-top:1px solid rgba(255,255,255,.08);padding-top:18px;color:var(--dim);font-size:13px;}
+  .muted{color:var(--dim);font-size:14px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="logo.png" alt="Frame35 logo" width="68" height="68">
+    <h1>Frame<span class="n">35</span></h1>
+  </header>
+  <p class="tag">Support &amp; Privacy</p>
+
+  <!-- ============ SUPPORT ============ -->
+  <h2>Support &amp; Help</h2>
+  <p>Need help with Frame35? Send us a message and we'll get back to you by email as soon as we can.</p>
+
+  <div class="card">
+    <form id="contact-form">
+      <input type="hidden" name="title" value="Frame35 support request">
+      <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">
+      <label for="name">Your name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Your email</label>
+      <input type="email" id="email" name="email" required placeholder="name@example.com">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit" id="send-btn">Send message</button>
+      <div class="status" id="status"></div>
+    </form>
+  </div>
+
+  <h3>Frequently asked</h3>
+  <p><strong>How does Frame35 work?</strong><br>Pick or take a photo, tap Improve, and Frame35 turns it into a 35mm film-style portrait in seconds. You can also combine a few photos into one scene.</p>
+  <p><strong>What does it cost?</strong><br>Improving a photo is a $0.99 in-app purchase, which includes one free re-try if you're not happy with the result.</p>
+  <p><strong>Where are my improved photos?</strong><br>Every improved photo is saved automatically in the app's gallery. You can also save any of them to your device's Photos library, or share them.</p>
+  <p><strong>I was charged but got no photo.</strong><br>Re-open the app and tap Improve again — your purchase is preserved, so you won't be charged twice. If it keeps happening, message us above.</p>
+
+  <div class="glow"></div>
+
+  <!-- ============ PRIVACY ============ -->
+  <h2 id="privacy">Privacy Policy</h2>
+  <p class="muted">Last updated 19 November 2026</p>
+  <p>Frame35 ("we", "the app") is a photo-enhancement app. This policy explains what information the app handles and how. We've kept it short because the app collects very little.</p>
+
+  <h3>What we handle</h3>
+  <p>The only data the app sends off your device is <strong>the photo you choose to improve or combine</strong>. We do not require an account, we do not ask for your name, email, or any personal identifiers, and we do not track you.</p>
+
+  <h3>How your photos are processed</h3>
+  <p>When you tap Improve or Combine, your selected photo is sent — over an encrypted connection — to a third-party AI image-processing service that generates the enhanced result and returns it to your device. Your photo is used <strong>only</strong> to produce that result.</p>
+  <p>These processing providers temporarily store the uploaded photo and the generated result on their servers (by default for about 7 days) before the files automatically expire and are deleted. Frame35 does not keep copies of your photos on our own servers.</p>
+
+  <h3>Photos you keep</h3>
+  <p>Improved photos are saved automatically in the app's in-app gallery, which is stored <strong>locally on your device</strong>. If you tap Save, a copy is also added to your device's Photos library. You can delete any photo from the in-app gallery at any time. Uninstalling the app removes the in-app gallery.</p>
+
+  <h3>Purchases</h3>
+  <p>Payments for the in-app purchase are processed by <strong>Apple</strong> through the App Store. We never see or receive your payment details.</p>
+
+  <h3>What we don't do</h3>
+  <ul>
+    <li>No user accounts or logins.</li>
+    <li>No analytics, advertising, or marketing SDKs.</li>
+    <li>No tracking across other apps or websites.</li>
+    <li>No selling or sharing of your data with data brokers.</li>
+    <li>No location, contacts, or microphone access.</li>
+  </ul>
+
+  <h3>Children</h3>
+  <p>Frame35 is not directed to children under 13 and does not knowingly collect personal information from children.</p>
+
+  <h3>Contact</h3>
+  <p>Questions about privacy? Use the support form at the top of this page.</p>
+
+  <footer>© 2026 Frame35. All rights reserved.</footer>
+</div>
+
+<script>
+  var CONTACT_WORKER_URL = "https://frame35-contact.wbrgyk6dyw.workers.dev";
+  var form   = document.getElementById("contact-form");
+  var btn    = document.getElementById("send-btn");
+  var status = document.getElementById("status");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    status.textContent = ""; status.className = "status";
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+    btn.disabled = true; btn.textContent = "Sending…";
+    fetch(CONTACT_WORKER_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: form.name.value, email: form.email.value,
+        message: form.message.value, website: form.website.value
+      })
+    })
+    .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
+    .then(function (res) {
+      if (res.ok && res.d.ok) {
+        status.textContent = "Thanks — your message has been sent. We'll reply by email.";
+        status.className = "status ok"; form.reset();
+      } else {
+        status.textContent = (res.d && res.d.error) || "Sorry, something went wrong. Please try again later.";
+        status.className = "status err";
+      }
+    })
+    .catch(function () { status.textContent = "Network error. Please try again later."; status.className = "status err"; })
+    .finally(function () { btn.disabled = false; btn.textContent = "Send message"; });
+  });
+</script>
+</body>
+</html>
